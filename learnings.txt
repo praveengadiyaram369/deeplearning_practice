@@ -1,0 +1,47 @@
+
+- Artificial Neural Networks = Input layer -> Hidden layers -> Output layer
+
+- Initially all the weights are set to random values and then adjusted to lower the cost function.
+
+- Only input layer does not have any activation function and all hidden and output layers have to use an activation function and pass its output to the next step.
+
+- Gradient descent helps to converge the process of finding the optimal values of weights by minimizing the cost function. general cost function, C =  1/2(test-ground_truth)^2.
+
+- In most cases, the cost function is convex in shape where the local minima is equal to global minima. If the cost function's shape is not convex then the global minima might not be same as the local minima.
+
+- To solve this issue, we need to use Stochastic Gradient descent approach where we try to provide one of the data and adjust the weights.
+
+- There are two types of Gradient descent are Batch GD and Stochastic GD.
+    -Batch GD - where we provide whole data to ANN, calculate the loss, optimize the weights and repeat again until we reach the global minima.
+    -Stochastic GD- where we provide one row at a time to ANN, calculate the loss, optimize the weights and repeat for all rows and again for all data until we reach the global minima. Due to possible high fluctuations in the output, we might reach the global minima much quicker than Batch GD.
+
+    - There is one more method which combines both Batch and Stochastic GD features and passes batches of rows(10,20, 30...) and calculates the loss and adjusts the weights. This process is called Mini-batch GD.
+
+- The process of adjusting weights with respect to the derivative of cost function is called back propagation.
+
+- Passing all rows of the input data to ANN is called one Epoch.
+
+- Different activation functions: ReLU, Linear function, sigmoid function, tanh, step function.
+
+- Four major steps in ANN models: Data Pre-processing -> Model building -> Model Training -> Model Testing
+
+- While creating ANN with Keras/Tensorflow libraries, we do not need to create the input layer. We just want to start with 1st hidden layer and then add layers accordingly until the output layer.
+
+- Careful with choosing appropriate activation function and no.of neurons at each step.
+
+- In general we use Keras dense layers where each neuron of the current layer receives input from the previous layer.
+
+- Shallow neural Networks- no.of hidden layers=1
+- Deep neural Networks - no. of hidden layers>1
+
+- While compling the ANN, we have to make sure that we provide the optimizer, loss function, metrics parameter.
+    - optimizer - 'adam'
+    - loss - 'binary_crossentropy' # _for the case of binary classification.
+    - loss - 'categorical_crossentropy' # _for non binary cases
+    - metrics - ['accuracy']
+
+- Always try to input the batch_size and Epoch values while training the ANN model.
+
+- Always try to scale the data before giving to neural networks(for both training and Testing).
+
+- 

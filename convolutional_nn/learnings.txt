@@ -34,3 +34,16 @@
 
     - Input image -> Convolution operation -> ReLU activation -> Max pooling -> Flattening -> ANN
 
+- CNN = input image -> convolutional layer -> pooling layer -> ANN
+
+- During back propagation, not only just weights are updated, but also feature detectors are adjusted.
+
+- Voting happens at the layer before output layer of the fully connected ANN, which is crucial for the classification.
+
+- Softmax layers gives the probabilites of output layer neurons which always add up to one.
+
+- Cross entropy function is much better compared to mean square error and classification error. Cross entropy uses logarithmic approach and magnifies the error. It is widely used in the classification tasks.
+
+- convolutional and pooling layers breaks down the image into small pieces and fully connected NN layer takes the pieces and combines which pieces are together.
+
+- working of pooling layer can be expressed as comparing the value in feature map to a threshold value.

@@ -43,3 +43,61 @@
 - Always try to input the batch_size and Epoch values while training the ANN model.
 
 - Always try to scale the data before giving to neural networks(for both training and Testing).
+
+- Keras.Sequential creates a neural network as a stack of layers.
+- while creating a dense layer, we should specify both input_shape and units parameters.
+        - input_shape - specifies no. of features needed
+        - units - no. of outputs
+
+        Ex:- input_shape = [5]  -> 5 features/columns
+             units = 1
+
+- Keras represents the weights of a neural network with tensors. Tensors are basically TensorFlow's version of a Numpy array with a few differences that make them better suited to deep learning. One of the most important is that tensors are compatible with GPU and TPU) accelerators. TPUs, in fact, are designed specifically for tensor computations.
+
+- neurons with no activation function are called linear units.
+
+- Adam is an SGD algorithm that has an adaptive learning rate that makes it suitable for most problems without any parameter tuning (it is "self tuning", in a sense). Adam is a great general-purpose optimizer.
+
+- Unlike other ML algorithms having fit and predict methods. Keras NN needs compile method to be configured before fit.
+
+    - compile -> fit -> predict
+
+- In compile method, specify the optimizer and loss function data.
+- while fit method, provide batch_size and epoch data.
+
+- NN model Capacity refers to the size and complexity of the patterns it is able to learn.
+
+- Capacity can be determined by how many layers in the network and how many neurons in each layer.
+        - Incase of underfitting -> increase the Capacity
+        - Incase of overfitting -> decrease the Capacity
+
+- We can increase the capacity of the network by either increasing the depth of the network or width of the network.
+        - depth = no. of layers in the model
+        - width = no. of neurons in a layer
+
+- we don't which networks will perform better on the data, Deeper vs Wider??. So we need to try different networks and observe the outputs.
+
+- Early Stopping: After some iterations, the validation loss may start to stop decreasing and starts increasing during the training. To prevent this, we stop the training process whenever the validation loss is not decreasing anymore. This is called Early stopping.
+
+- This helps the model won't continue to learn noise and overfit the data.
+
+- It is better to include early stopping and set the training epochs to large number by which we can prevent both underfitting and overfitting. we can use callbacks which will run after every epoch while training.
+
+    - Ex:- early_stopping = EarlyStopping(
+                            min_delta=0.001, # minimium amount of change to count as an improvement
+                            patience=20, # how many epochs to wait before stopping
+                            restore_best_weights=True,)
+
+- These parameters say: "If there hasn't been at least an improvement of 0.001 in the validation loss over the previous 20 epochs, then stop the training and keep the best model you found." 
+
+        Credits: https://www.kaggle.com/ryanholbrook/overfitting-and-underfitting
+
+- To increase the performance of the NN, we can use Dropout and Batch Normalization.
+
+- The main difference between solving a classification and regression problem with ANN is choosing the loss function and output layer.
+
+- Cross entropy is the measure of distance from one probability distribution to other. Always use cross entropy as loss function in classification problems.
+
+- We have to apply the BatchNormalization before the dense layer and for the first layer, we also need to specify the input_shape along with BatchNormalization initialization.
+
+- 

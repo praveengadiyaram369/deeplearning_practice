@@ -43,5 +43,3 @@
 - Always try to input the batch_size and Epoch values while training the ANN model.
 
 - Always try to scale the data before giving to neural networks(for both training and Testing).
-
-- 

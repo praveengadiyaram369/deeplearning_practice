@@ -47,3 +47,5 @@
 - convolutional and pooling layers breaks down the image into small pieces and fully connected NN layer takes the pieces and combines which pieces are together.
 
 - working of pooling layer can be expressed as comparing the value in feature map to a threshold value.
+
+- convolutional NN are generally used for solving the computer vision problems.

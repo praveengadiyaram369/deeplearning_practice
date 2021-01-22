@@ -101,3 +101,7 @@
 - We have to apply the BatchNormalization before the dense layer and for the first layer, we also need to specify the input_shape along with BatchNormalization initialization.
 
 - 
+
+Generating feature sets for fault diagnosis using denoising stacked auto-encoder
+https://towardsdatascience.com/lstm-autoencoder-for-anomaly-detection-e1f4f2ee7ccf
+https://icml.cc/2011/papers/455_icmlpaper.pdf

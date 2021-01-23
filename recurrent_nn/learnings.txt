@@ -1,0 +1,19 @@
+-   Vanishing Gradient Problem: Back propagtion process of updatin weights can be a big problem, for the initial layers of NN, as RNN uses a series of NN's at every stage the Gradient(delta) gets decreased and the weights updated are not much effective. It also creates imbalance in weight distributions, making few layers weights better than the rest of the NN.
+    - smaller weights - Vanishing gradient problem
+    - larger weights - exploiding gradient problem
+
+- Vanishing Gradient problem solutions
+        - Appropriate weight Initialization
+        - Echo state networks
+        - Long Short Term Memory networks
+
+- Exploding gradient problem solutions:
+        - Truncated Backpropagation
+        - Penalties
+        - Gradient Clipping with threshold limits 
+
+- Recurrent Neural networks: RNN's can be thought as a multiple copies of the same network, each passing a message to successor. We can say RNN are NN's which have loops. Past can be useful to better understand the present.
+        Ref:- http://colah.github.io/posts/2015-08-Understanding-LSTMs/
+        
+- The key attribute of RNN's is the ability to persist information/cell state for later use.
+- Long Term Short Memory networks: 

@@ -1,3 +1,4 @@
 1) pipenv --python 3.7.5
 2) pipenv install tensorflow==2.2.0
 3) pipenv install jupyter
+4) pipenv install pillow

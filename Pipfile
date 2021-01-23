@@ -9,6 +9,7 @@ verify_ssl = true
 numpy = "*"
 jupyter = "*"
 tensorflow = "==2.2.0"
+pillow = "*"
 
 [requires]
 python_version = "3.7"

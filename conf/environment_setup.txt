@@ -2,3 +2,5 @@
 2) pipenv install tensorflow==2.2.0
 3) pipenv install jupyter
 4) pipenv install pillow
+5) pipenv install sklearn
+6) pipenv install matplotlib

@@ -10,6 +10,8 @@ numpy = "*"
 jupyter = "*"
 tensorflow = "==2.2.0"
 pillow = "*"
+sklearn = "*"
+matplotlib = "*"
 
 [requires]
 python_version = "3.7"

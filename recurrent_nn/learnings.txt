@@ -16,4 +16,4 @@
         Ref:- http://colah.github.io/posts/2015-08-Understanding-LSTMs/
         
 - The key attribute of RNN's is the ability to persist information/cell state for later use.
-- Long Term Short Memory networks: 
+- Long Term Short Memory networks: can help with temporal features of the data.

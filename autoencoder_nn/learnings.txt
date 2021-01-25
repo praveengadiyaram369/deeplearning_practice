@@ -1,0 +1,6 @@
+- https://machinelearningmastery.com/lstm-autoencoders/
+
+- Autoencoders are a type of self-supervised learning models.
+- Autoencoders can provide denoised and compressed representation of input data. It can also be used for dimensionality reduction.
+
+- The performance of the autoencoder models depends on the ability to recreate the input sequence.

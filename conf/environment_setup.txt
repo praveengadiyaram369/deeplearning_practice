@@ -4,3 +4,5 @@
 4) pipenv install pillow
 5) pipenv install sklearn
 6) pipenv install matplotlib
+7) pipenv install opencv-contrib-python
+8) pipenv install opencv-python

@@ -134,3 +134,4 @@ convolutional_nn/Section+40+-+Convolutional+Neural+Networks+(CNN)/
 convolutional_nn/dataset/
 convolutional_nn/cats_vs_dogs/kagglecatsanddogs_3367a/
 convolutional_nn/cats_vs_dogs/logs
+recurrent_nn/stock_market_forecasting/AAPL.csv

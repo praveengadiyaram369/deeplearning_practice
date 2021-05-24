@@ -3,3 +3,8 @@
 3) conda install jupyterlab numpy pandas pillow scikit-learn matplotlib 
 4) conda install tensorflow
 
+Google colab:
+1) !pip install tensorflow-gpu
+2) !nvidia-smi
+3) import tensorflow as tf 
+   tf.__version__

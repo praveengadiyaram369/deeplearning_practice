@@ -2,9 +2,11 @@
 2) conda activate deeplearning_setup
 3) conda install jupyterlab numpy pandas pillow scikit-learn matplotlib 
 4) conda install tensorflow
+5) conda install pytorch torchvision -c pytorch
 
 Google colab:
 1) !pip install tensorflow-gpu
 2) !nvidia-smi
 3) import tensorflow as tf 
    tf.__version__
+4) torch.cuda.is_available()
